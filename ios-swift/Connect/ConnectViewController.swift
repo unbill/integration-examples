@@ -25,7 +25,7 @@ class ConnectViewController: UIViewController, WKNavigationDelegate, WKScriptMes
         view.addSubview(self.wkWebView!)
         self.wkWebView?.navigationDelegate = self
 
-        let urlString = "https://connect.unbill.us"
+        let urlString = "https://connect.q2open.io"
 //        let urlString = "http://localhost:8080/?clientId=593ab9ef8ea75a6602fe90e2&apiKey=1f4c3860-23ae-11e7-bf2a-fbdce2d27727"
         let url = URL(string: urlString)!
         self.wkWebView?.load(URLRequest(url: url) as URLRequest)

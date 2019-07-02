@@ -35,7 +35,7 @@ export default class App extends React.Component {
       <SafeAreaView style={styles.safeArea}>
         <WebView
           injectedJavaScript={patchPostMessageJsCode}
-          source={{ uri: 'https://connect.unbill.us' }}
+          source={{ uri: 'https://connect.q2open.io' }}
           useWebKit={true}
           onMessage={event => receiveEvent(event.nativeEvent.data)}
         />
